@@ -1,6 +1,7 @@
 .env
 .env.local
 .env.*.local
+serviceAccountKey.json
 __pycache__/
 *.pyc
 *.pyo
