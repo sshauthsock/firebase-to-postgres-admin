@@ -1,20 +1,51 @@
+# =========================
+#  Secrets & Environment
+# =========================
+
+# Environment files
 .env
+.env.*
 .env.local
 .env.*.local
+
+# Firebase / service account keys
+keys/
 serviceAccountKey.json
+*.pem
+*.key
+
+# =========================
+#  Python
+# =========================
+
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
 venv/
 .venv/
 env/
 ENV/
-docs/internal/*
+
+# =========================
+#  Logs
+# =========================
+
 *.log
 logs/
+
+# =========================
+#  OS / Editor
+# =========================
+
 .DS_Store
 *.swp
 *.swo
 *~
-keys/
+
+# =========================
+#  Internal Docs (optional)
+# =========================
+
+docs/internal/
