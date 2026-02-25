@@ -32,6 +32,11 @@ services:
       - postgres
     env_file:
       - .env
+    environment:
+      GOOGLE_APPLICATION_CREDENTIALS: /run/keys/serviceAccountKey.json
+    volumes:
+      - .:/app
+      - /mnt/d/04_dev_workspace/10_apps/sshauthsock.github.io/config/serviceAccountKey.json:/run/keys/serviceAccountKey.json:ro
     command: ["python", "-m", "app.migrations.run"]
     restart: "no"
 
