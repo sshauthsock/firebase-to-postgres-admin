@@ -1,3 +1,14 @@
+## Portfolio (Start here)
+
+If you are reviewing this repository as a portfolio project, start here:
+
+- **docs/portfolio/README.md**
+
+This repo is a monorepo containing:
+
+- a crash-safe Firestore → PostgreSQL migration engine
+- a minimal FastAPI backend for admin/read access
+
 # Firebase to PostgreSQL Admin
 
 Creature management system migrated from Firebase to PostgreSQL with Admin UI.
@@ -25,22 +36,26 @@ firebase-to-postgres-admin/
 ## Setup
 
 1. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 2. Create `.env` file (copy from `.env.example`):
+
 ```bash
 cp .env.example .env
 # Edit .env with your database credentials
 ```
 
 3. Initialize database:
+
 ```bash
 python scripts/init_db.py
 ```
 
 4. Start server:
+
 ```bash
 python manage.py start
 # or
@@ -76,9 +91,9 @@ python manage.py status     # Check server status
 ## Development Status
 
 This is a prototype version. Next steps:
+
 - [ ] Admin UI implementation
 - [ ] Firestore migration script
 - [ ] Image upload handling
 - [ ] Authentication/Authorization
 - [ ] Production CORS configuration
-
